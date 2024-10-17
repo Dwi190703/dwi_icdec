@@ -1,0 +1,14 @@
+** sch_path: /home/dwi/ringosc3.sch
+**.subckt ringosc3 vdd out gnd
+*.iopin vdd
+*.iopin gnd
+*.opin out
+x3 vdd out net1 gnd inverter
+x1 vdd net1 net2 gnd inverter
+x2 vdd net2 out gnd inverter
+**.ends
+
+* expanding   symbol:  inverter.sym # of pins=4
+** sym_path: /home/dwi/.xschem/inverter.sym
+** sch_path: /home/dwi/.xschem/inverter.sch
+.end
